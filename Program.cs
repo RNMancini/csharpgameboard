@@ -6,7 +6,10 @@ namespace Game
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      int arg = [i, j];
+      if(i > j , j++);
+      Console.WriteLine(" ");
+      Return [] result;
     }
   }
 }
