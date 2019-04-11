@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Game
+namespace GameItem
 {
-  class Board
+  class BoardInformation
   {
     static void Main(string[] args)
     {
