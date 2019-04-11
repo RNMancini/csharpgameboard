@@ -30,28 +30,45 @@ public class GameBoard
     this.width = width;
   }
 
-  public static void drawboard(int height, int width)
+  public void drawboard()
   {
     for (int row = 0; row < height; row++)
     {
-      for (int column = 0; column < width; column++)
+      for (int part = 0; part < 3; part++)
       {
-        Console.WriteLine(".");
+        for (int column = 0; column < width; column++)
+        {
+          switch ()
+          {
+            case 0:
+              Console.Write("+-+");
+              break;
+            case 1:
+              Console.Write("| |");
+              break;
+            case 2:
+              Console.Write("+-+");
+              break;
+          }
+        }
+        Console.WriteLine();
       }
-      Console.WriteLine();
     }
   }
-}
 
-public class Game
-{
-  String[,] board { get; set; }
-}
-public static class ConnectFour
-{
-  public static int height = 6;
-  public static int width = 7;
+  public class Game
+  {
+    public String[,] board { get; set; }
+    //public String player1;
+    //public String player2;
+    //public int[][] playerOne;
+  }
+  public static class ConnectFour
+  {
+    public static int height = 6;
+    public static int width = 7;
 
-}
+    public static void drawBoard()
+  }
 
 }
