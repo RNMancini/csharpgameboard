@@ -59,7 +59,18 @@ public class GameBoard
 public class Game
 {
   public String[,] board { get; set; }
-  public void applyMove(int[] location, String player)
+  public void applyMove(Move move)
+  {
+    this.board[move.location[0], move.location[1]] = move.player;
+  }
+}
+
+public class Move
+{
+  public int[] location { get; set; }
+  public String player { get; set; }
+
+  public Move(int[] locaion, String player)
   {
     this.location = location;
     this.player = player;
