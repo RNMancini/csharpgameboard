@@ -55,20 +55,13 @@ public class GameBoard
       }
     }
   }
-
-  public class Game
+}
+public class Game
+{
+  public String[,] board { get; set; }
+  public void applyMove(int[] location, String player)
   {
-    public String[,] board { get; set; }
-    //public String player1;
-    //public String player2;
-    //public int[][] playerOne;
+    this.location = location;
+    this.player = player;
   }
-  public static class ConnectFour
-  {
-    public static int height = 6;
-    public static int width = 7;
-
-    public static void drawBoard()
-  }
-
 }
